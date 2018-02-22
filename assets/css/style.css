@@ -1,0 +1,257 @@
+@charset "UTF-8";
+@font-face {
+    font-family: GE_Flow_Bold;
+    src: url("../fonts/GE_Flow_Bold.otf");
+}
+
+@font-face {
+    font-family: GE_Flow_Regular;
+    src: url("../fonts/GE_Flow_Regular.otf");
+}
+
+@font-face {
+    font-family: BebasNeue_Bold;
+    src: url("../fonts/BebasNeue_Bold.otf");
+}
+
+@font-face {
+    font-family: BebasNeue_Regular;
+    src: url("../fonts/BebasNeue_Regular.otf");
+}
+
+
+/* BODY */
+html,
+body {
+  min-height: 100%;
+}
+body {
+    font-family: GE_Flow_Regular;
+    background: url('../images/LayoutBG.png') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* CONTENT */
+
+.content {
+    text-align: center;
+}
+
+
+/* LOGO */
+
+.logo img {margin: 4rem 0;width: 450px;max-width: 90%;}
+
+.logo h1 {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: 2rem 0 4rem;
+}
+
+.logo h1 span {
+  font-family: 'GE_Flow_Bold';
+  border: 4px solid #fff;
+  width: max-content;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  background: #5c4da0;
+  padding: 1.5rem 2.5rem;
+  color: #fff;
+  font-size: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.logo h1 span:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 2px solid #fff;
+    transform: translate(1rem, 1rem);
+    z-index: -1;
+}
+
+.logo .box {
+    position: absolute;
+    border: 3px solid #fff;
+    padding: 1.5rem 2.5rem;
+    width: 242px;
+    margin: auto;
+    background: transparent;
+    left: 57.8rem;
+    bottom: 35rem;
+    height: 84px;
+}
+
+
+/* COUNTDOWN */
+
+.countdown h2 {
+    display: inline-block;
+}
+
+.countdown label {
+    display: block;
+}
+
+.countdown label.num {
+    font-family: 'BebasNeue_Bold';
+    color: #fff;
+    font-size: 10rem;
+}
+
+.countdown label.date {
+    font-family: 'GE_Flow_Regular';
+    font-size: 2rem;
+    color: #fff;
+    padding-right: 2rem;
+    font-weight: lighter;
+}
+
+
+/* REGISTRATION */
+
+.registration p {
+    font-family: 'GE_Flow_Regular';
+    font-size: 1.7rem;
+    color: #fff;
+    direction: rtl;
+    word-spacing: 3px;
+    margin: auto;
+    width: 495px;
+    padding: 1rem 0;
+}
+
+.registration form {
+  width: 470px;
+  margin: auto;
+  max-width: 90%;
+  padding: 1rem;
+  overflow: hidden;
+  text-align: center;
+}
+.registration label {
+    text-align: right;
+    background: #5c4da0;
+    color: #fff;
+    width: 75%;
+    outline: 0;
+    margin-left: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.registration label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 2px solid #fff;
+    transform: translate(1rem, 1rem);
+    z-index: -1;
+}
+.registration input {display: block;width: 100%;background: transparent;border: none;font: inherit;text-align: inherit;padding: 9px;font-size: 2rem;background: #5d4ea0;border: 3px solid #fff;}
+
+.registration .input_box {
+    position: absolute;
+    border: 2px solid #fff;
+    padding: 1.5rem 2.5rem;
+    width: 340px;
+    margin: auto;
+    background: transparent;
+    left: 58.5rem;
+    bottom: 5.5rem;
+    height: 54px;
+}
+
+.registration input:after {
+    position: relative;
+}
+
+.registration input::placeholder {
+    font-family: 'GE_Flow_Regular';
+    color: #8873d2;
+}
+
+.registration button {
+    font-family: 'GE_Flow_Bold';
+    color: #8873d2;
+    background: #fff;
+    border: 1px solid #fff;
+    outline: 0;
+    padding: 1rem;
+    font-size: 2rem;
+    float: left;
+}
+
+
+/* SOCIAL MEDIA */
+
+.social_media {
+    padding: 2rem 0;
+}
+
+.social_media a {
+    padding: 0.5rem;
+}
+
+.social_media img {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* REGISTRATION DONE */
+
+.logo img:nth-child(2) {
+    width: 150px;
+    display: block;
+    margin: auto;
+    padding-bottom: 3rem;
+}
+
+.logo .registration_box {
+    position: absolute;
+    border: 3px solid #fff;
+    padding: 1.5rem 2.5rem;
+    width: 320px;
+    margin: auto;
+    background: transparent;
+    left: 53.5rem;
+    bottom: 11.5rem;
+    height: 84px;
+}
+
+.registration_done .social_media {
+    padding: 5rem 0;
+}
+
+@media (max-width: 480px) {
+  .countdown label.num {
+    font-size: 15vw;
+  }
+  .registration p {
+    font-size: 1.3rem;
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+  .registration label {
+    width: 80%;
+  }
+  .registration button {
+    width: 60%;
+    margin: 2rem 0 0;
+    float: none;
+  }
+}
